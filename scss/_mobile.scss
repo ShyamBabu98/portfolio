@@ -48,6 +48,16 @@
             background: url('../img/portrait.png');
         }
     }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'jobOne'
+        'jobTwo'
+        'jobThree';
+        grid-template-columns: 1fr;
+    }
 }
 
 @include mediaSm {
