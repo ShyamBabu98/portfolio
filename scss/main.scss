@@ -21,7 +21,7 @@ h1, h2, h3 {
     font-weight: 400;
     
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     &.sm-heading {
@@ -71,3 +71,31 @@ main {
         }
     }
 }
+
+// Media Query
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px){
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px ) and (max-width: 1170px){
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px){
+        @content;
+    }
+}
+
+@import 'mobile';
